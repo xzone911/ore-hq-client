@@ -18,7 +18,7 @@ pub struct MineArgs {
     #[arg(
         long,
         value_name = "CORES",
-        default_value = "1",
+        default_value = "999",
         help = "Number of cores to use while mining"
     )]
     pub cores: u32,
