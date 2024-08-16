@@ -287,7 +287,7 @@ async fn main() {
 fn process_message(msg: Message, message_channel: UnboundedSender<ServerMessage>) -> ControlFlow<(), ()> {
     match msg {
         Message::Text(t)=>{
-            println!("\n>>> Server Message: \n{}\n",t);
+            println!("\n>>> Server Message: \n");
         },
         Message::Binary(b) => {
             let message_type = b[0];
